@@ -32,7 +32,7 @@
 6. Restoring files to last staging version in the local directory: git restore [filename]
    Restoring to a specific version: git restore --source=HEAD~n [filename ]
 
-
+7. Cloning a repo from github: git clone [link]
 
 
 ## Staging Specific Commands 
@@ -66,4 +66,20 @@
 4. To get uniqueID of all files/folder at Head minus nth commit: git ls-tree HEAD~n // tree = folder and blob = file
 
 5. To see the final version of a file/folder with its uniqueId: git show [uniqueId] 
+
+## Linking local repo to a remote site (eg github)
+
+1. Create a empty repo named same as this on github and copy the link of the repo
+
+2. Add the origin: git remote add origin [link]
+
+3. Check the remote repo connected to local one: git remote -v
+
+## Pushing (only for HTTPS linked repo)
+
+1. Make a personal token in github website
+
+2. Push command: git push origin master   // can use --all instead of master for all branches to push
+
+   This will ask for username and password, in the password past the personal token created
 
