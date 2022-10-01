@@ -63,7 +63,7 @@
 
 3. To show final version of the file in Head minus nth commit: git show HEAD~n: [filename]
 
-4. To show all files/folders affected by a commit statement: git ls-tree HEAD~n
+4. To get uniqueID of all files/folder at Head minus nth commit: git ls-tree HEAD~n // tree = folder and blob = file
 
 5. To see the final version of a file/folder with its uniqueId: git show [uniqueId] 
 
