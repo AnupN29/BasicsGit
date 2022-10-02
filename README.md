@@ -94,9 +94,12 @@ Default Main Branch: Master Branch
 3. Change branch: git checkout [nameOfBranch]
 
 ## Merging 
+(NOTE: merging from branchA to branchB will add all changes to branchB and branchA will remain the same)
 
-1. Merge directly: git merge [nameOfBranch]
+1. Merge directly: git merge [nameOfBranch]  
 (Usually when working with a group, we first push the new branch to github to see if everyone is statisfied with the new branch being added and then merge it in github and pull the new merged branch to local machine )
+
+(If there is a conflict (i.e 2 branches with overlapping code) while merging then you need to manually resolve it)
 
 2. Pushing new branch to github: git push origin [nameOfBranch]
 
@@ -108,3 +111,7 @@ Default Main Branch: Master Branch
 4. Pull the merged branch to local machine: git pull origin [nameOfBranch]
 
 5. May Delete the secondary branch: git branch -d [nameOfBranch]
+
+## Forking 
+
+1. In Github: forking means copying some repo (not owned by you), then you can make changes on the copied repo and can ask to merge those changes to main repo if you want.
